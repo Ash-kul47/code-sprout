@@ -25,10 +25,16 @@ body {
 }
 
 /* ---------- Navbar ---------- */
+/* ---------- Navbar ---------- */
 header {
   background: var(--plum-dark);
   padding: 15px 30px;
+
+  position: sticky;  /* 👈 makes it stick */
+  top: 0;            /* 👈 sticks at the very top */
+  z-index: 1000;     /* 👈 keeps it above other content */
 }
+
 
 header nav {
   display: flex;
