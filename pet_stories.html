@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adoption Stories</title>
+  <link rel="stylesheet" href="pet_stories.css">
+</head>
+<body>
+  
+  <!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">🐾 FurryTails 🐶🐱</div>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Pets</a></li>
+    <li><a href="#">Adoption Stories</a></li>
+    <li><a href="#">Why Adopt?</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Login</a></li>
+  </ul>
+</nav>
+
+  <!-- Background Video -->
+  <div class="video-container">
+    <video autoplay muted loop>
+      <source src="images adoption/4267752-uhd_3840_2160_30fps.mp4" type="video/mp4">
+    </video>
+    <div class="heading">💖 Heartwarming Adoption Stories</div>
+  </div>
+
+  <!-- Overlay -->
+  <div class="overlay" onclick="closeAllCards()"></div>
+
+  <!-- Cards -->
+  <div class="cards-container">
+    <!-- Card 1 -->
+    <div class="card" onclick="toggleCard(this)">
+      <button class="close-btn" onclick="closeCard(event,this)">×</button>
+      <img src="https://images.unsplash.com/photo-1611003228941-98852ba62227?fm=jpg&q=60&w=3000" alt="Story 1">
+      <h3>Lucky’s New Home</h3>
+      <p>A playful puppy  found his forever family.</p>
+      <div class="card-details">
+        Lucky’s journey began in a crowded shelter, frightened and unsure of the world. A gentle family saw something special in his bright eyes and decided to welcome him home. With patience and love, Lucky transformed into the heart of the household, delighting everyone with his playful antics. He spends his days chasing toys, napping in sunny spots, and snuggling close to his new humans, ever grateful for his second chance.
+        <div class="card-buttons">
+          <button>Adopt Similar</button>
+        </div>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="card" onclick="toggleCard(this)">
+      <button class="close-btn" onclick="closeCard(event,this)">×</button>
+      <img src="images adoption/cat 2.jpg" alt="Story 2">
+      <h3>Bella’s Journey</h3>
+      <p>From shelter to spoiled princess.</p>
+      <div class="card-details">
+        Bella was timid and reserved when she arrived at the shelter, longing for comfort and care. That changed the day a kind woman adopted her, promising warmth and happiness. Bella adapted quickly, reveling in long walks through the garden, curling up on the couch for cozy naps, and being pampered like a royal princess. Her transformation from shelter cat to cherished companion is an inspiration to everyone she meets.
+        <div class="card-buttons">
+          <button>Adopt Similar</button>
+        </div>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="card" onclick="toggleCard(this)">
+      <button class="close-btn" onclick="closeCard(event,this)">×</button>
+      <img src="images adoption/dog 2.jpg" alt="Story 3">
+      <h3>Max Finds a Family</h3>
+      <p>A loyal companion discovered love.</p>
+      <div class="card-details">
+        Max, a loyal companion, spent months waiting for someone to see past his shyness. The day he met his new family, everything changed. Through patience and constant affection, Max blossomed into a confident and loving dog. He now enjoys endless playtime in the backyard, gentle training sessions, and peaceful evenings surrounded by his humans, forever grateful for the love he’s found.
+        <div class="card-buttons">
+          <button>Adopt Similar</button>
+        </div>
+      </div>
+    </div>
+    <!-- Card 4 -->
+    <div class="card" onclick="toggleCard(this)">
+      <button class="close-btn" onclick="closeCard(event,this)">×</button>
+      <img src="images adoption/cat 5.avif" alt="Story 4">
+      <h3>Luna’s Adventure</h3>
+      <p>A rescue kitten happy ending.</p>
+      <div class="card-details">
+       Petrified and skittish, Luna was found alone under a porch. Things took a turn when she was rescued and lovingly nurtured by her adopters. Gradually, Luna learned to trust and became an adventurous kitten. She now explores every corner of her new home, revels in playdates with other pets, and enjoys cuddling up for bedtime stories—her days are filled with curiosity and unconditional love.
+        <div class="card-buttons">
+          <button>Adopt Similar</button>
+        </div>
+      </div>
+    </div>
+    <!-- Card 5 -->
+    <div class="card" onclick="toggleCard(this)">
+      <button class="close-btn" onclick="closeCard(event,this)">×</button>
+      <img src="images adoption/dog 3.jpg" alt="Story 5">
+      <h3>Charlie’s Big Day</h3>
+      <p>A senior dog finds peace.</p>
+      <div class="card-details">
+        Charlie spent his youth bringing joy to many, but in his golden years, he found himself alone. Thanks to a caring rescue, Charlie moved to a peaceful retirement home where he was showered with love and comfort. He enjoys slow walks in the garden, gentle treats, and cozy naps beside the window. Charlie’s days are now filled with warmth, security, and the gentle touch of those who treasure him.
+        <div class="card-buttons">
+          <button>Adopt Similar</button>
+        </div>
+      </div>
+    </div>
+    <!-- Card 6 -->
+    <div class="card" onclick="toggleCard(this)">
+      <button class="close-btn" onclick="closeCard(event,this)">×</button>
+      <img src="images adoption/dog 8.avif" alt="Story 6">
+      <h3>Daisy’s Dream</h3>
+      <p>Once lost, now loved.</p>
+      <div class="card-details">
+        Once a stray wandering without hope, Daisy was rescued and given a fresh start. Her new family promised her safety and affection, helping her heal from her past. Daisy now greets each day with excitement, playing in the grass, joining her humans on gentle strolls, and getting belly rubs under the sun. Her transformation from lost to truly loved is a testament to the power of kindness.
+        <div class="card-buttons">
+          <button>Adopt Similar</button>
+        </div>
+      </div>
+    </div>
+    <!-- Card 7 -->
+    <div class="card" onclick="toggleCard(this)">
+      <button class="close-btn" onclick="closeCard(event,this)">×</button>
+      <img src="images adoption/dog 1.jpg" alt="Story 7">
+      <h3>Rocky’s Rescue</h3>
+      <p>From fear to freedom.</p>
+      <div class="card-details">
+        Rocky’s life began with uncertainty—timid and anxious, he was wary of everyone he met. After being rescued from a difficult situation, Rocky was welcomed into a loving foster home where trust came slowly. Day by day, with gentle encouragement and kindness, he started to let his guard down. Eventually, Rocky discovered the joy of open fields, soft beds, and the simple pleasure of being cared for. Now, thanks to his new family, Rocky races across green lawns and greets every sunrise with a wagging tail and a heart full of hope.
+        <div class="card-buttons">
+          <button>Adopt Similar</button>
+        </div>
+      </div>
+    </div>
+    <!-- Card 8 -->
+    <div class="card" onclick="toggleCard(this)">
+      <button class="close-btn" onclick="closeCard(event,this)">×</button>
+      <img src="images adoption/cat 3.jpg" alt="Story 8">
+      <h3>Milo’s Magic</h3>
+      <p>A kitten who stole hearts.</p>
+      <div class="card-details">
+        Milo was a tiny kitten with a big spirit, abandoned but never defeated. When he arrived at the shelter, his curiosity and playful energy made him impossible to ignore. A family quickly fell in love with his sparkling eyes and mischievous antics, deciding to make him part of their world. Milo’s days are now filled with games of chase, cozy nap times in his favorite blanket, and endless cuddles. He greets everyone with a purr, reminding his family daily how much joy one small rescue can bring into a home.
+        <div class="card-buttons">
+          <button>Adopt Similar</button>
+        </div>
+      </div>
+    </div>
+    <!-- Card 9 -->
+    <div class="card" onclick="toggleCard(this)">
+      <button class="close-btn" onclick="closeCard(event,this)">×</button>
+      <img src="images adoption/cat 10.jpg" alt="Story 9">
+      <h3>Zoe’s Forever Family</h3>
+      <p>A kitten finds warmth.</p>
+      <div class="card-details">
+        Zoe spent her early days searching for someone to care for her, quietly hoping for a safe place. Her life took a beautiful turn the moment she was adopted by a warm-hearted family. Now, Zoe enjoys basking in sunny windows, playing gentle games with the children, and curling up beside her favorite humans at night. She has found comfort, friendship, and a lifetime of love. Zoe’s story is a shining reminder that every animal deserves—and can find—a forever home.
+        <div class="card-buttons">
+          <button>Adopt Similar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleCard(card) {
+      const isActive = card.classList.contains("active");
+      closeAllCards();
+      if (!isActive) {
+        card.classList.add("active");
+        document.querySelector(".overlay").classList.add("show");
+      }
+    }
+
+    function closeAllCards() {
+      document.querySelectorAll(".card").forEach(c => c.classList.remove("active"));
+      document.querySelector(".overlay").classList.remove("show");
+    }
+
+    function closeCard(event, btn) {
+      event.stopPropagation();
+      btn.parentElement.classList.remove("active");
+      document.querySelector(".overlay").classList.remove("show");
+    }
+  </script>
+<!-- Adoption Stats Section -->
+<section class="stats-section">
+  <h2>Our Impact 🐾</h2>
+  <div class="stats-container">
+    <div class="stat-box">
+      <h3>1200+</h3>
+      <p>Pets Adopted</p>
+    </div>
+    <div class="stat-box">
+      <h3>800+</h3>
+      <p>Happy Families</p>
+    </div>
+    <div class="stat-box">
+      <h3>300+</h3>
+      <p>Volunteers</p>
+    </div>
+    <div class="stat-box">
+      <h3>50+</h3>
+      <p>Shelters Connected</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
