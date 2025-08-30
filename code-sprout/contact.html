@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FurryTails | Contact</title>
+  
+  <link rel="stylesheet" href="contact.css"> <!-- page-specific styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1>🐾 FurryTails🐶🐱</h1>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="pets.html">Pets</a></li>
+        <li><a href="stories.html">Adoption Stories</a></li>
+        
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="about_us.html">About us</a></li>
+        <li><a href="signin.html">Sign in</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero contact-hero">
+    <div class="hero-content">
+      <h2>Get in Touch 🐾</h2>
+      <p>We’d love to hear from you! Whether you have questions, feedback, or adoption inquiries.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-cards">
+      <div class="card">
+        <i class="fas fa-phone"></i>
+        <h3>Call Us</h3>
+        <p>+91 98765 43210</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-envelope"></i>
+        <h3>Email Us</h3>
+        <p>support@furrytails.com</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Visit Us</h3>
+        <p>123 Paw Street, Pet City, India</p>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="button" id="sendMessageBtn">Send Message</button>
+        <script>
+          document.getElementById('sendMessageBtn').onclick = function() {
+            // Create popup
+            const popup = document.createElement('div');
+            popup.textContent = 'Message sent!';
+            popup.style.position = 'fixed';
+            popup.style.top = '50%';
+            popup.style.left = '50%';
+            popup.style.transform = 'translate(-50%, -50%)';
+            popup.style.background = '#fff';
+            popup.style.color = '#333';
+            popup.style.padding = '2rem 3rem';
+            popup.style.borderRadius = '10px';
+            popup.style.boxShadow = '0 2px 16px rgba(0,0,0,0.2)';
+            popup.style.fontSize = '1.3rem';
+            popup.style.zIndex = '9999';
+            document.body.appendChild(popup);
+
+            setTimeout(function() {
+              popup.remove();
+              window.location.href = 'homepage.html';
+            }, 1500);
+          };
+        </script>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 FurryTails. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
